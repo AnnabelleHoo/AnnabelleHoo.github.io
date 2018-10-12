@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="home_style.css" />
+<script>
+
+		function submit(){
+			if(parseInt(document.getElementById("input1").value)+parseInt(document.getElementById("input2").value) == 10 && parseInt(document.getElementById("input1").value)+parseInt(document.getElementById("input3").value) == 10 && parseInt(document.getElementById("input2").value)+parseInt(document.getElementById("input4").value) == 20 && parseInt(document.getElementById("input3").value)+parseInt(document.getElementById("input4").value) == 20){
+				document.getElementById("result").placeholder = "Success";
+			}	else {
+				document.getElementById("result").placeholder = "please try again";
+			}
+
+		}
+
+</script>
+</head>
+
+
+<body>
+  <br>Let's play this math puzzle! </br>
+	<input id="input1" type="text" size="2"> +
+	<input id="input2" type="text" size="2"> = 10
+	<br>
+	&nbsp;+&emsp;&emsp;+
+	<br>
+	<input id="input3" type="text" size="2"> +
+	<input id="input4" type="text" size="2"> = 20
+	<br>
+&nbsp;=&nbsp;&emsp;&emsp;=
+  <br>
+	&nbsp;10&nbsp;&emsp;20
+	<button onclick="submit()">Submitt</button>
+	<br>
+	<input id="result" type="text" placeholder="please try again">
+
+
+</body>
+</body>
+</html>
